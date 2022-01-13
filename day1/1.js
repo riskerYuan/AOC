@@ -20,7 +20,7 @@ function deep(arr) {
     return deepNumber
 }
 
-const input_data = require('./input_data')
+const input_data = require('./data1')
 const test1 = require('./test1')
 
 exe(input_data)

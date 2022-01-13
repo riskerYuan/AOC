@@ -1,4 +1,4 @@
-const inputdata=require('./input_data')
+const inputdata=require('./data1')
 let dive = inputdata.split('\n').filter(x => x);
 
 let diveForward = 0;

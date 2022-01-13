@@ -1,4 +1,4 @@
-let data = require('./data')
+let data = require('./data2')
 
 data = data.split('\n').map(item => parseInt(item.trim()))
 console.log(data);

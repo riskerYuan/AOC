@@ -81,7 +81,7 @@ const grids = entriesToGrids(entries);
 const {grid, number} = getNumberAndGrid(numbers, grids);
 console.log(getSumNotChecked(grid) * number);
 
-// day 4  1
+// day 4  2
 function getNumberAndLastWinningGrid(numbers, grids) {
     const winningGrids = [];
     for (const number of numbers) {
