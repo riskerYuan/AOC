@@ -1,6 +1,6 @@
-const reportsStr=require('./input_data')
+const reportsStr = require('./input/input_data')
 
-const reports= reportsStr.split('\n')
+const reports = reportsStr.split('\n')
 
 // day 3 1
 function getBinaryCounters(reports) {
@@ -14,15 +14,14 @@ function getBinaryCounters(reports) {
     let binaryGamma = '';
     let binaryEpsilon = '';
     for (const counter of counters) {
-        binaryGamma += counter >= reports.length/2 ? '1' : '0';
-        binaryEpsilon += counter < reports.length/2 ? '1' : '0';
+        binaryGamma += counter >= reports.length / 2 ? '1' : '0';
+        binaryEpsilon += counter < reports.length / 2 ? '1' : '0';
     }
     return {binaryGamma, binaryEpsilon};
 }
 
 const {binaryGamma, binaryEpsilon} = getBinaryCounters(reports);
 console.log(parseInt(binaryGamma, 2) * parseInt(binaryEpsilon, 2));
-
 
 
 let oxygens = [...reports];

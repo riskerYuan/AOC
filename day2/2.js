@@ -1,11 +1,10 @@
-let data = require('./data2')
+let data = require('./input/data2')
 data = data.split('\n')
 
 data = data.map(item => {
     const arr = item.split(' ')
     return {target: arr[0], index: arr[1]}
 })
-console.log(data);
 
 let forwardTotal = 0
 let downTotal = 0

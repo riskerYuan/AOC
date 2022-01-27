@@ -1,11 +1,11 @@
 const NB_GRIDS = 100;
 const GRID_SIZE = 5;
 
-const data=require('./input_data')
-const numbers =data.num
+const data = require('./input/input_data')
+const numbers = data.num
 
 
-const entries = data.data5.replace(/\n/gi,' ')
+const entries = data.data5.replace(/\n/gi, ' ')
 
 function entriesToGrids(entries) {
     entries = entries.replace(/\s\s+/g, ' ').split(' ');

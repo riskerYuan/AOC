@@ -15,6 +15,6 @@ function getBinaryCounters(reports) {
     return {binaryGamma, binaryEpsilon};
 }
 
-const reports = require("./input_data")
+const reports = require("./input/input_data")
 const {binaryGamma, binaryEpsilon} = getBinaryCounters(reports.split('\n'));
 console.log(parseInt(binaryGamma, 2) * parseInt(binaryEpsilon, 2));
