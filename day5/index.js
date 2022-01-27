@@ -1,6 +1,6 @@
 const input = require("fs").readFileSync('./input/input.txt', "utf-8")
 
-const MAX_VALUE = 1000;
+const MAX_VALUE = 9999;
 
 function generateGrid() {
     const grid = [];
