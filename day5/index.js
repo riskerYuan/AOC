@@ -15,7 +15,6 @@ function generateGrid() {
 
 function entriesToGrids(entries, withDiag) {
     entries = entries.replace(/ -> /g, ',').replace(/\s+/g, ',').split(',');
-    console.log(entries);
     const nbEntries = entries.length / 4;
     let i = 0;
     const grid = generateGrid();
@@ -32,7 +31,6 @@ function entriesToGrids(entries, withDiag) {
                     grid[x][y]++;
                 }
             }
-            // Consider diagonal lines only if needed (part 2)
         } else if (withDiag) {
             const steps = Math.abs(x1 - x2) + 1;
             const signX = x1 < x2 ? 1 : -1;

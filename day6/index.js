@@ -2,8 +2,8 @@ const fishes = require('./input/data')
 
 function getNbFishesAfterXDays(days, fishes) {
     let giveBirthInXdays = new Array(9).fill(0);
-    for (const fishe of fishes) {
-        giveBirthInXdays[fishe]++;
+    for (const fish of fishes) {
+        giveBirthInXdays[fish]++;
     }
     for (let day=0; day < days; day++) {
         let babies = giveBirthInXdays[0];
