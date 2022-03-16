@@ -2,7 +2,7 @@ const reportsStr = require('./input/input_data')
 
 const reports = reportsStr.split('\n')
 
-// day 3 1
+// day09 3 1
 function getBinaryCounters(reports) {
     const counters = new Array(12).fill(0);
     for (const report of reports) {

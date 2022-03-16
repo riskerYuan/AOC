@@ -16,8 +16,8 @@ function getNbFishesAfterXDays(days, fishes) {
     return giveBirthInXdays.reduce((acc, val) => acc + val);
 }
 
-// day 6 part 1
+// day09 6 part 1
 console.log(getNbFishesAfterXDays(80, fishes));
 
-// day 6 part 2
+// day09 6 part 2
 console.log(getNbFishesAfterXDays(256, fishes));

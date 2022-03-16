@@ -53,10 +53,10 @@ function countBiggerThan(grid, number) {
     return counter;
 }
 
-// day 5  1
+// day09 5  1
 const grid = entriesToGrids(input, false);
 console.log(countBiggerThan(grid, 1));
 
-// day 5  2
+// day09 5  2
 const gridWithDiag = entriesToGrids(input, true);
 console.log(countBiggerThan(gridWithDiag, 1));
